@@ -5,6 +5,13 @@ terraform {
       version = "4.40.0"
     }
   }
+
+  backend "azurerm" {
+    resource_group_name  = "rgrajib"
+    storage_account_name = "stgrajib"
+    container_name       = "rajibcontainer"
+    key                  = "rajib.tfstate"
+  }
 }
 
 provider "azurerm" {
@@ -12,6 +19,8 @@ provider "azurerm" {
   features {}
   subscription_id = "6eb6ee21-8952-4718-9243-5a0101ee200e"
 resource_provider_registrations = "none"
+
+
 
 }
 
