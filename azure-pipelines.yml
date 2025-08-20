@@ -4,10 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+  - main
 
 pool:
-name: August
+  name: August
 
 
 steps:
