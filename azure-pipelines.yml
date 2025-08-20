@@ -19,6 +19,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    backendServiceArm: 'August_20_th'
     backendAzureRmOverrideSubscriptionID: '6eb6ee21-8952-4718-9243-5a0101ee200e'
     backendAzureRmResourceGroupName: 'rgrajib'
     backendAzureRmStorageAccountName: 'rajib'
